@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Losowanie kostek"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liczba kostek"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextDiceNumber"
+            android:hint="Podaj liczbę kostek"
+            android:inputType="number"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/drawButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOSUJ"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wylosowane kostki"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <GridLayout
+            android:id="@+id/gridDices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:gravity="center"
+            android:useDefaultMargins="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wyniki: "
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textViewResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-, -, -, -, -"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/buttonUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SORTUJ ROSNĄCO"/>
+
+        <Button
+            android:id="@+id/buttonDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SORTUJ MALEJĄCO"/>
+
+    </LinearLayout>
+</ScrollView>
